@@ -4,9 +4,9 @@ import path from 'node:path'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Base para despliegue estático
+  base: './',
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
       output: {

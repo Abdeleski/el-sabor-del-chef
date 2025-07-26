@@ -25,12 +25,11 @@ jobs:
     
     - name: Build
       run: |
-        cd client
-        npx vite build --config ../vite.config.static.ts
+        npx vite build --config vite.config.static.ts
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        publish_dir: ./client/dist
