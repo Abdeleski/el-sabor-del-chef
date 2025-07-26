@@ -4,9 +4,9 @@ import path from 'node:path'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Configuración para GitHub Pages
+  base: '/el-sabor-del-chef/', // Nombre del repositorio para GitHub Pages
   build: {
-    outDir: 'dist',
+    outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
       output: {
