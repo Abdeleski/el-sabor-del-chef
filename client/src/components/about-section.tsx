@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Utensils, Heart, Leaf } from "lucide-react";
+import ReliableImage from "./reliable-image";
 
 export default function AboutSection() {
   return (
@@ -38,8 +39,9 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="animate-slide-up">
-            <img 
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+            <ReliableImage 
+              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+              fallback="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
               alt="Chef preparando platos mediterráneos" 
               className="rounded-xl shadow-2xl w-full h-auto" 
             />
