@@ -46,7 +46,11 @@ Una página web profesional para el restaurante "El Sabor del Chef", especializa
 
 4. **Construir para producción:**
    ```bash
+   # Para servidor completo
    npm run build
+   
+   # Para sitio estático (GitHub Pages)
+   npm run build:static
    ```
 
 ## Estructura del Proyecto
@@ -88,11 +92,20 @@ Una página web profesional para el restaurante "El Sabor del Chef", especializa
 
 ## Despliegue
 
-El proyecto está optimizado para despliegue en plataformas como:
-- Replit
-- Vercel
-- Netlify
-- Heroku
+### GitHub Pages (Recomendado)
+
+1. **Sube el código a GitHub** siguiendo las instrucciones anteriores
+2. **Activa GitHub Pages:**
+   - Ve a tu repositorio > **Settings** > **Pages**
+   - En **Source**, selecciona **"GitHub Actions"**
+3. **Automático:** El sitio se construirá automáticamente con cada push
+
+Tu sitio estará disponible en: `https://tu-usuario.github.io/tu-repositorio/`
+
+### Otras plataformas
+- **Replit**: Funciona directamente con `npm run dev`
+- **Vercel**: Compatible con el build estático
+- **Netlify**: Compatible con el build estático
 
 ## Licencia
 
