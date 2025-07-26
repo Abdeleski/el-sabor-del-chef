@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sabor del Chef - Restaurante Mediterráneo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; }
+        .hero { background: linear-gradient(rgba(30, 58, 138, 0.7), rgba(30, 58, 138, 0.7)), url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1920&h=1080&fit=crop&crop=center&auto=format&q=80'); background-size: cover; height: 100vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .btn { display: inline-block; padding: 12px 24px; background: #d4af37; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 0.3s; }
+        .btn:hover { background: #b8941f; transform: translateY(-2px); }
+        .section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2rem; color: #1e3a8a; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
+        .menu-card { background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; }
+        .qr-placeholder { width: 200px; height: 200px; background: white; margin: 0 auto 1rem; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #1e3a8a; font-weight: bold; }
+        .contact-info { background: #f8fafc; padding: 2rem; border-radius: 10px; margin-top: 2rem; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .footer { background: #1e3a8a; color: white; text-align: center; padding: 2rem; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .section { padding: 2rem 1rem; } }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div>
+            <h1>El Sabor del Chef</h1>
+            <p>Auténtica cocina mediterránea en el corazón de la ciudad</p>
+            <a href="#menu" class="btn">Ver Menú</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Bienvenidos a Nuestro Restaurante</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🍽️ Tradición Culinaria</h3>
+                <p>Más de 20 años creando experiencias gastronómicas únicas con recetas tradicionales mediterráneas y un toque moderno.</p>
+            </div>
+            <div class="card">
+                <h3>🌿 Ingredientes Frescos</h3>
+                <p>Seleccionamos cuidadosamente ingredientes frescos y de temporada de proveedores locales para garantizar la máxima calidad.</p>
+            </div>
+            <div class="card">
+                <h3>❤️ Pasión por la Cocina</h3>
+                <p>Nuestro chef combina técnicas tradicionales con innovación para crear platos que despiertan todos los sentidos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Nuestro Menú Digital</h2>
+        <div class="card menu-card">
+            <h3>Acceso al Menú</h3>
+            <div class="qr-placeholder">
+                <div>
+                    <div style="font-size: 3rem;">📱</div>
+                    <div>Código QR del Menú</div>
+                </div>
+            </div>
+            <p style="margin-bottom: 1rem;">Escanea el código QR o haz clic en el enlace para acceder a nuestro menú completo con todos los platos, precios y descripciones.</p>
+            <a href="./menu_1753543517259.pdf" target="_blank" class="btn">Ver Menú PDF</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Horarios y Servicios</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🕐 Horarios</h3>
+                <p><strong>Lunes a Viernes:</strong> 12:00 - 16:00 | 19:00 - 23:30</p>
+                <p><strong>Fines de Semana:</strong> 12:00 - 23:30</p>
+                <p><strong>Domingos:</strong> 12:00 - 22:00</p>
+            </div>
+            <div class="card">
+                <h3>🎯 Servicios</h3>
+                <p>• Comedor interior (50 personas)</p>
+                <p>• Terraza exterior (26 personas)</p>
+                <p>• Eventos privados</p>
+                <p>• Servicio de catering</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Contacto y Ubicación</h2>
+        <div class="contact-info">
+            <div class="contact-grid">
+                <div>
+                    <h4>📍 Dirección</h4>
+                    <p>Calle Gourmet 123<br>Ciudad Sabores, 28001</p>
+                </div>
+                <div>
+                    <h4>📞 Teléfono</h4>
+                    <p>+34 912 345 678</p>
+                </div>
+                <div>
+                    <h4>✉️ Email</h4>
+                    <p>info@elsabordelchef.com</p>
+                </div>
+                <div>
+                    <h4>🌐 Redes Sociales</h4>
+                    <p>@ElSaborDelChef</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 El Sabor del Chef. Todos los derechos reservados.</p>
+        <p>Diseño web profesional para restaurantes</p>
+    </footer>
+</body>
+</html>
