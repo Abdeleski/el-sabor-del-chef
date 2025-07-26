@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd client && npx vite build --config ../vite.config.static.ts",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
