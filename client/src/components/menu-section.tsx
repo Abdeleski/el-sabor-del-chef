@@ -4,7 +4,7 @@ import { Fish, Wine, Leaf, QrCode, Info } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 
 export default function MenuSection() {
-  const { data: qrCodeUrl } = useQuery({
+  const { data: qrCodeUrl, isLoading } = useQuery({
     queryKey: ["/api/menu/qr"],
     enabled: true,
   });
@@ -30,8 +30,13 @@ export default function MenuSection() {
             </div>
             
             <div className="bg-gray-100 w-48 h-48 mx-auto rounded-lg flex items-center justify-center mb-6 border-4 border-gold-500">
-              {qrCodeUrl ? (
-                <img src={qrCodeUrl} alt="QR Code del Menú" className="w-full h-full object-contain" />
+              {isLoading ? (
+                <div className="text-center">
+                  <div className="animate-spin w-8 h-8 border-2 border-mediterranean-900 border-t-transparent rounded-full mx-auto mb-2"></div>
+                  <p className="text-sm text-gray-600">Generando QR...</p>
+                </div>
+              ) : qrCodeUrl && typeof qrCodeUrl === 'string' ? (
+                <img src={qrCodeUrl} alt="QR Code del Menú" className="w-full h-full object-contain p-2" />
               ) : (
                 <div className="text-center">
                   <QrCode className="w-16 h-16 mediterranean-900 mx-auto mb-2" />

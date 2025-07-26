@@ -1,7 +1,7 @@
 # Restaurant Website Application
 
 ## Overview
-This is a modern restaurant website application for "El Sabor del Chef", a Mediterranean fusion restaurant. The application is built as a full-stack web application with a React frontend and Express.js backend, featuring a responsive design, menu QR code generation, and static content serving.
+This is a modern restaurant website application for "El Sabor del Chef", a Mediterranean fusion restaurant. The application is built as a full-stack web application with a React frontend and Express.js backend, featuring a responsive design, menu QR code generation, and static content serving. The website includes QR code functionality that allows customers to access the digital menu PDF by scanning a code displayed on the website.
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.
@@ -85,3 +85,10 @@ The application follows a monorepo structure with clear separation between clien
 - **Database**: Ready for PostgreSQL deployment (currently using in-memory storage)
 
 The application is designed to be easily deployable on Replit or similar Node.js hosting platforms, with clear separation of concerns and modern development practices.
+
+## Recent Changes
+- **QR Code System**: Implemented functional QR code generation for menu access
+- **Menu PDF Integration**: Updated system to use the provided restaurant menu PDF file
+- **Professional Design**: Created Mediterranean-themed website with responsive layout
+- **Fixed CSS Import Issues**: Resolved import order problems with Tailwind and Google Fonts
+- **Loading States**: Added loading spinner for QR code generation

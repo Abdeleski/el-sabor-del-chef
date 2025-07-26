@@ -23,7 +23,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         }
       });
       
-      res.json({ qrCodeUrl: qrCodeDataUrl });
+      res.json(qrCodeDataUrl);
     } catch (error) {
       console.error('Error generating QR code:', error);
       res.status(500).json({ error: 'Failed to generate QR code' });
