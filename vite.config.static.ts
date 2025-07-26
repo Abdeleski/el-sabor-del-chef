@@ -21,5 +21,5 @@ export default defineConfig({
     },
   },
   root: './client',
-  publicDir: '../attached_assets',
+  publicDir: '../public',
 })

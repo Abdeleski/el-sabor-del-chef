@@ -100,7 +100,7 @@ Una página web profesional para el restaurante "El Sabor del Chef", especializa
    - En **Source**, selecciona **"GitHub Actions"**
 3. **Automático:** El sitio se construirá automáticamente con cada push
 
-Tu sitio estará disponible en: `https://tu-usuario.github.io/tu-repositorio/`
+Tu sitio estará disponible en: `https://abdeleski.github.io/el-sabor-del-chef/`
 
 ### Otras plataformas
 - **Replit**: Funciona directamente con `npm run dev`
