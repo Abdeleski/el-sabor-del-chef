@@ -17,4 +17,4 @@ script2.defer = true;
 document.body.appendChild(script2);
 
 // Renderiza la app de React
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(<App />); 
