@@ -21,7 +21,7 @@ export default function MenuQRStatic() {
                   Menú Digital
                 </h3>
                 <p className="text-mediterranean-700 mb-6 leading-relaxed">
-                  Escanea el código QR o haz clic en el enlace para ver nuestro menú completo con todos los platos, precios y descripciones detalladas.
+                  Escanea el código QR para ver nuestro menú completo con todos los platos, precios y descripciones detalladas.
                 </p>
                 <a
                   href={menuUrl}
