@@ -18,4 +18,3 @@ document.body.appendChild(script2);
 
 // Renderiza la app de React
 createRoot(document.getElementById("root")!).render(<App />);
-
