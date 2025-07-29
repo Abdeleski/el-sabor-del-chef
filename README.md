@@ -109,4 +109,4 @@ Tu sitio estará disponible en: `https://abdeleski.github.io/el-sabor-del-chef/`
 
 ## Licencia
 
-© 2024 El Sabor del Chef. Todos los derechos reservados.
+© 2025 El Sabor del Chef. Todos los derechos reservados.
