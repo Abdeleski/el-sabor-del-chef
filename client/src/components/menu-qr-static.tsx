@@ -1,5 +1,5 @@
 export default function MenuQRStatic() {
-  const menuUrl = "./menu_1753543517259.pdf"; // Se servirá desde el directorio público
+  const menuUrl = "./MenuEl-Sabor-del-Chef.pdf.pdf"; // Se servirá desde el directorio público
 
   return (
     <section id="menu" className="py-20 bg-gradient-to-b from-white to-cream-50">
@@ -45,7 +45,7 @@ export default function MenuQRStatic() {
                 <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-mediterranean-100">
                   <div className="w-48 h-48 bg-white rounded-lg flex items-center justify-center">
                     <img
-                      src="/qr-menu.png"
+                      src="/MenuEl-Sabor-del-Chef.pdf.png"
                       alt="Código QR del Menú"
                       className="w-40 h-40 object-contain"
                     />
