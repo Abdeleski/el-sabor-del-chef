@@ -33,7 +33,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Menu PDF serving endpoint
   app.get("/api/menu/pdf", (req, res) => {
     try {
-      const menuPath = path.join(process.cwd(), 'attached_assets', 'menu.pdf');
+      const menuPath = path.join(process.cwd(), 'attached_assets', 'MenuEl-Sabor-del-Chef.pdf.pdf');
       
       if (fs.existsSync(menuPath)) {
         res.setHeader('Content-Type', 'application/pdf');
