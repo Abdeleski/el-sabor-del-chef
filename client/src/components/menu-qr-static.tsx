@@ -45,7 +45,7 @@ export default function MenuQRStatic() {
                 <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-mediterranean-100">
                   <div className="w-48 h-48 bg-white rounded-lg flex items-center justify-center">
                     <img
-                      src="/MenuEl-Sabor-del-Chef.pdf.png"
+                      src="/MenuEl-Sabor-del-Chef.pdf (1).png"
                       alt="Código QR del Menú"
                       className="w-40 h-40 object-contain"
                     />
